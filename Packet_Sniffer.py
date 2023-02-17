@@ -17,5 +17,5 @@ def packet_sniffer(packet):
     else:
         print("[Other] From: ", packet[IP].src, " to: ", packet[IP].dst)
 
-# Start the sniffer
+
 sniff(filter="ip", prn=packet_sniffer)
